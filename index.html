@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Supermarket Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #2C3E50;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    color: #FFF;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #E74C3C;
+    color: #FFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #C0392B;
+}
+
+.promo {
+    padding: 60px 0;
+    background: #F1F1F1;
+    text-align: center;
+}
+
+.promo h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.promo-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.promo-item {
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.promo-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promo-item h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.newsletter {
+    background: #2C3E50;
+    color: #FFF;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: #E74C3C;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+footer {
+    background: #333;
+    color: #FFF;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin-bottom: 10px;
+}
+
+.footer-item ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social li {
+    margin: 0 10px;
+}
+
+.social li a {
+    color: #FFF;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+</style>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Supermarket Co.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Fresh Groceries Delivered to Your Doorstep</h2>
+            <p>Explore our wide range of organic and locally sourced products.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="container">
+            <h2>Weekly Promotions</h2>
+            <div class="promo-grid">
+                <div class="promo-item">
+                    <img src="https://via.placeholder.com/150" alt="Fruits Promo">
+                    <h3>Fruits & Vegetables</h3>
+                    <p>Up to 20% off</p>
+                </div>
+                <div class="promo-item">
+                    <img src="https://via.placeholder.com/150" alt="Dairy Promo">
+                    <h3>Dairy Products</h3>
+                    <p>Buy 1 Get 1 Free</p>
+                </div>
+                <div class="promo-item">
+                    <img src="https://via.placeholder.com/150" alt="Meat Promo">
+                    <h3>Fresh Meat</h3>
+                    <p>15% off all orders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Newsletter</h2>
+            <p>Get exclusive deals and discounts directly to your inbox.</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-item">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Follow Us</h3>
+                    <ul class="social">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 Supermarket Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
